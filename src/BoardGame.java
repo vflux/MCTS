@@ -3,28 +3,28 @@ import java.util.List;
 
 public interface BoardGame {
 
-	int getCount();
+    int getCount();
 
-	List<Move> getMoves();
+    List<Move> getMoves();
 
-	boolean makeMove(int x, int y);
+    boolean makeMove(int x, int y);
 
-	Color getTurn();
+    Color getTurn();
 
-	boolean gameOver();
+    boolean gameOver();
 
-	int getNumberOfPossibleMoves();
+    int getNumberOfPossibleMoves();
 
-	void playRandomMove();
+    void playRandomMove();
 
-	double[] reward();
+    double[] reward();
 
-	Color[][] getBoard();
+    Color[][] getBoard();
 
-	boolean isLegal(int i, int j);
+    boolean isLegal(int i, int j);
 
-	boolean isDecisiveGame();
+    boolean isDecisiveGame();
 
-	Move getDecisiveMove();
+    Move getDecisiveMove();
 
 }
